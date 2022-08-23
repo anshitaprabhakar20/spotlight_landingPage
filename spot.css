@@ -1,0 +1,169 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: gilroy;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation-name: body;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    background-color: #000;
+}
+#nav{
+    color: rgba(255, 255, 255, 0.397);
+    font-weight: lighter;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    height: 5%;
+    animation-name: txt;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#txt{
+    position: absolute;
+    top: 3%;
+    left: 28%;
+    line-height:55px ;
+    text-align: center;
+    color: white;
+    animation-name: txt;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 7%;
+    left: 25%;
+}
+#txt h4{
+    font-size: 30px;
+}
+#txt h6{
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+#txt h1{
+    font-size: 90px;
+    font-style: italic;
+    animation-name: txth1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+#scroll{
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    top: 22%;
+    left: 0;
+    background-color:#000;
+    white-space: nowrap;
+    animation:scroll 7s linear  infinite ;
+    z-index: 9999999;
+}
+#scroll .pictures{
+    height: 100%;
+    width: 265px;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: default;
+    background-size: cover;
+    background-position: center;
+}
+#scroll .pictures:nth-child(1){
+    background-image: url(https://cdn.xxl.thumbs.canstockphoto.com/brazilian-raises-one-foot-and-arms-female-model-wearing-neutral-clothes-white-background-full-stock-photos_csp49785439.jpg);
+}
+#scroll .pictures:nth-child(2){
+    background-image: url(https://i.redd.it/tcjjyz6xshf71.jpg);
+}
+#scroll .pictures:nth-child(3){
+    background-image: url(https://previews.123rf.com/images/cheschhh/cheschhh1612/cheschhh161200320/67567362-lifestyle-fashion-and-people-concept-full-body-young-woman-model-posing-in-studio.jpg);
+}
+#scroll .pictures:nth-child(4){
+    background-image: url(https://s3.envato.com/files/275605341/F-645Z4581%202%20copy.jpg);
+}
+#scroll .pictures:nth-child(5){
+    background-image: url(https://thumbs.dreamstime.com/b/full-body-street-fashion-portrait-young-beautiful-confident-woman-posing-urban-background-model-looking-down-girl-77023097.jpg);
+}
+#scroll .pictures:nth-child(6){
+    background-image: url(https://i.pinimg.com/736x/1c/1a/91/1c1a911fc0ca733772dc452e1abe291a--urban-editorial-photography-grunge-fashion.jpg);
+}
+
+#scroll .pictures:nth-child(7){
+    background-image: url(https://i.pinimg.com/originals/2c/c0/36/2cc036eff0438614da59ad4788f67c19.jpg);
+}
+#scroll .pictures:nth-child(8){
+    background-image: url(https://cdn.create.vista.com/api/media/small/213927972/stock-photo-elegant-fashionable-woman-presenting-trendy);
+}
+#scroll .pictures:nth-child(9){
+    background-image: url(https://library.kissclipart.com/20180831/vkw/kissclipart-model-full-body-png-clipart-model-5b433282d71f520d.jpg);
+}
+#scroll .pictures:nth-child(10){
+    background-image: url(https://images.unsplash.com/photo-1590399830217-8db7489f911e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmVtYWxlJTIwbW9kZWx8ZW58MHx8MHx8&w=1000&q=80);
+}
+#scroll .pictures:nth-child(11){
+    background-image: url(https://wallpaperaccess.com/full/2224457.jpg);
+}
+#scroll .pictures:nth-child(12){
+    background-image: url(https://www.crushpixel.com/big-static7/preview4/beautiful-girl-posing-evening-dress-173278.jpg);
+}
+#bottom{
+    position: absolute;
+    bottom: 0%;
+    left:28%;
+    color: white;
+    text-align: center;
+    animation-name: txt;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    line-height: 60px;
+}
+#bottom h1{
+    font-size: 90px;
+}
+@keyframes scroll{
+    0%{
+         transform: translateX(0);
+    }
+    100%{
+         transform: translateX(-100%);
+    }
+}
+@keyframes body{
+    0%{
+        background: linear-gradient(to right,rgba(255, 168, 168, 0.395),rgba(67, 100, 162, 0.647));
+    }
+    100%{
+        background-color: #000;
+    }
+}
+@keyframes txt{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: #fff;
+    }
+}
+@keyframes txth1{
+    0%{
+        color: #000;
+    }
+    100%{
+        color: cornflowerblue;   
+    }
+}
